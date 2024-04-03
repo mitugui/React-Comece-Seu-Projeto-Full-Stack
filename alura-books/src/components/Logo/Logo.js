@@ -7,7 +7,8 @@ function Logo() {
             <img
                 src={logo} 
                 alt="Logo Alura Books" 
-                className="logo-img">
+                className="logo-img"
+                draggable="false">
             </img>
             <p><strong>Alura</strong>Books</p>
         </div>

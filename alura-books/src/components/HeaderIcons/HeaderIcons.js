@@ -1,21 +1,31 @@
-import './style.css'
 import profile from '../../img/profile.svg'
 import shopping_bag from '../../img/shopping-bag.svg'
+import styled from 'styled-components'
+
+const Icons = styled.ul`
+    display: flex;
+    align-items: center;
+`
+
+const Icon = styled.li`
+    margin-left: 40px;
+    width: 25px;
+`
 
 const icons = [profile, shopping_bag]
 
 function HeaderIcons() {
     return (
-        <ul className="icons">
+        <Icons>
             {icons.map((icon) => (
-                <li className="icon">
+                <Icon>
                     <img
                         src={icon}
                         draggable="false">
                     </img>
-                </li>
+                </Icon>
             ))}
-        </ul>
+        </Icons>
     )
 }
 

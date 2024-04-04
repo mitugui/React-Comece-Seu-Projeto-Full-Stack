@@ -1,5 +1,5 @@
-import profile from '../../img/profile.svg'
-import shopping_bag from '../../img/shopping-bag.svg'
+import profile from '../img/profile.svg'
+import shopping_bag from '../img/shopping-bag.svg'
 import styled from 'styled-components'
 
 const Icons = styled.ul`
@@ -21,6 +21,7 @@ function HeaderIcons() {
                 <Icon>
                     <img
                         src={icon}
+                        alt="Logo da Alura Books"
                         draggable="false">
                     </img>
                 </Icon>

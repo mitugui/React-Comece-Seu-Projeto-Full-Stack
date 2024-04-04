@@ -1,6 +1,6 @@
-import Logo from '../Logo/Logo'
-import HeaderOptions from '../HeaderOptions/HeaderOptions'
-import HeaderIcons from '../HeaderIcons/HeaderIcons'
+import Logo from './Logo'
+import HeaderOptions from './HeaderOptions'
+import HeaderIcons from './HeaderIcons'
 import styled from 'styled-components'
 
 const HeaderContainer = styled.header`

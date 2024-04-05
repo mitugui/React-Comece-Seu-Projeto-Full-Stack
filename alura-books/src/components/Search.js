@@ -25,10 +25,25 @@ const Subtitle = styled.h3`
     margin-bottom: 40px;
 `
 
+const Searched = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    p {
+        width: 200px;
+    }
+    img {
+        width: 100px;
+    }
+    &:hover {
+        border: 1px solid white;
+    }
+`
+
 function Search() {
     const [searchedBooks, setSearchedBooks] = useState([])
-
-    console.log(searchedBooks)
 
     return (
         <SearchContainer>
@@ -43,6 +58,12 @@ function Search() {
                     setSearchedBooks(searchResult)
                 }}
             />
+            {searchedBooks.map(book => (
+                <Searched>
+                    <p>{book.name}</p>
+                    <img src={book.src} />
+                </Searched>
+            ))}
         </SearchContainer>
     )
 }

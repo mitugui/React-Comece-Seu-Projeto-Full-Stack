@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Input from './Input'
+import { Input } from './Input'
 import { useState } from 'react'
 import { books } from '../searchData'
 
@@ -61,7 +61,7 @@ function Search() {
             {searchedBooks.map(book => (
                 <Searched>
                     <p>{book.name}</p>
-                    <img src={book.src} />
+                    <img src={book.src} alt={`Capa do livro ${book.name}`} />
                 </Searched>
             ))}
         </SearchContainer>
